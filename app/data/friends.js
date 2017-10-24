@@ -6,7 +6,7 @@ const friendsArray =[
 	},
 	{
 		"name":"Ryan S.",
-		"photo":"https://lh4.googleusercontent.com/wuXhumeknIh9wD5lRhRoDxgnA1Qa_jiyZR8_7LavqRA5qoATyRnDOlGFyQ6DXImJXCQKkVAyVH10qhs=w1920-h917",
+		"photo":"http://icons.iconarchive.com/icons/ph03nyx/super-mario/256/Retro-Star-icon.png",
 		"scores":[3, 3, 1, 2, 1, 2, 4, 3, 1, 2]
 	},
 	{
@@ -21,12 +21,12 @@ const friendsArray =[
 	},
 	{
 		"name":"Erik Denman",
-		"photo":"https://lh4.googleusercontent.com/WxwnkLDL8BF-5STMyWV3byQLr58kW_D0tBV7VyJK0WVIFPDM3qTSnnEGJmqlMYVwoV269Bg6PCwoFGw=w1920-h917-rw",
+		"photo":"http://icons.iconarchive.com/icons/ph03nyx/super-mario/256/Retro-Star-icon.png",
 		"scores":[3, 4, 3, 2, 2, 1, 4, 5, 5, 5]
 	},
 	{
 		"name":"Kendra Krzywicki",
-		"photo":"https://lh4.googleusercontent.com/0S60Lxvhgi-nj93cDNuOkcn8qftmFymUFdjLprCF1EYzwJkvoyE1RLGxit_TP352W3RepxJ2HKxdce6zVPwYfw=w1920-h917-rw",
+		"photo":"http://icons.iconarchive.com/icons/ph03nyx/super-mario/256/Retro-Star-icon.png",
 		"scores":[2, 2, 3, 4, 1, 4, 3, 5, 4, 2]
 	},
 	{

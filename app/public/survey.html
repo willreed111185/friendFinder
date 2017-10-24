@@ -202,13 +202,11 @@
 
 	    	console.log("Seek: ",friendData);
 	    	let currentURL = window.location.origin;
-	    	$.post(currentURL + "/api/match", friendData, function(data){
-	    		$.get("/api/matchResult", function(yourMatch) {
+	    	$.post(currentURL + "/api/match", friendData, function(yourMatch){
 	    			console.log("Match: ",yourMatch);
 	    			$("#matchName").text(yourMatch.name);
 	    			$('#matchImg').attr("src", yourMatch.photo);
 		    		$("#resultsModal").modal('toggle');
-	    		});
 	    	});
 		}else{
 			alert("You're missing some required fields!");
