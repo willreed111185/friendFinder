@@ -8,24 +8,26 @@ appAPI.get("/APIall", function(req, res) {
 
 appAPI.post("/api/match", function(req, res) {
   let currentFriend = req.body;
-
-    var results= []; 
-    for (var i = 0; i < friends.length; i++) {
-                var totalScore = 0;
-                for (var x = 0; x < currentFriend.scores.length; x++) {
-                     totalScore+=Math.abs(currentFriend.scores[x]-friends[i].scores[x]);
-        }
-        results.push(totalScore);
-    }
-    let myfriend = results.indexOf(Math.min.apply(null,results));
-    let myfriendObj = {
-      name: friends[myfriend].name,
-      photo:friends[myfriend].photo,
-    }
-    
+  let foundFriend = friendFinder(currentFriend);
     friends.push(currentFriend);
-
-    res.json(myfriendObj);
+    res.json(foundFriend);
 });
+
+function friendFinder(friend){
+  var results= []; 
+  for (var i = 0; i < friends.length; i++) {
+              var totalScore = 0;
+              for (var x = 0; x < friend.scores.length; x++) {
+                   totalScore+=Math.abs(friend.scores[x]-friends[i].scores[x]);
+      }
+      results.push(totalScore);
+  }
+  let myfriend = results.indexOf(Math.min.apply(null,results));
+  let myfriendObj = {
+    name: friends[myfriend].name,
+    photo:friends[myfriend].photo,
+  }
+  return myfriendObj
+}
 
 module.exports = appAPI;
